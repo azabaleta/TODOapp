@@ -1,0 +1,71 @@
+.CreateTodoSect{
+    padding: 2.5em;
+    width: 95%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.label{
+    margin: 0.5em 0 0.5em 0;
+}
+.input{
+    color: black;
+    margin-bottom: 2em;
+    padding-left: 0.6em;
+    width: 80%;
+    height: 1.8em;
+    border: none;
+    border-radius: 0.4em;
+}
+.input-description{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: black;
+    padding-top: 0.4em;
+    height: 4em;
+}
+.input-description:focus{
+    outline-color: #00a4aa;
+}
+.input:focus{
+    outline-color: #00a4aa;
+}
+.imput::placeholder{
+color: #A5A5A5;
+font-family: 'Montserrat';
+font-weight: 400;
+}
+.input-description::placeholder{
+    color: #A5A5A5;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+.CreateBtn{
+    width: 15em;
+    height: 2.2em;
+    background: #00AA50;
+    border-radius: .5em;
+
+    transition: all .3s ease;
+}
+.CreateBtn:hover{
+    background: #00a4aa;
+    color: rgb(236, 233, 233);
+}
+.CreateBtn:active{
+    opacity: 0.8;
+    transform: scale(0.95);
+}
+@media (max-width: 450px){ 
+    .CreateTodoSect{
+        padding: 1.5em;
+    }
+    .label{
+        margin: 0.5em 0 0.5em 0;
+    }
+    .input{
+        padding-left: 0;
+
+    }
+  }

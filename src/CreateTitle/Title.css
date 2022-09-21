@@ -1,0 +1,17 @@
+.Title {
+    margin-bottom: 0;
+    font-size: 3em;
+}
+.TodoTitle {
+    color: #00AA50;
+}
+@media (max-width: 600px){ 
+    .Title {
+        font-size: 2.5em;
+    }
+  }
+@media (max-width: 450px){ 
+    .Title {
+        font-size: 2em;
+    }
+  }

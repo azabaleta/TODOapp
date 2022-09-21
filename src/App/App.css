@@ -1,0 +1,56 @@
+.App {
+  background: #f3bdbd;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.Sections{
+  margin: 1fr;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.SectionLeft{
+  margin-top: 3em;
+  max-height: 90vh;
+  background: #F1E8E5;
+  width: 35%;
+
+  border-radius: 1.5em;
+}
+.SectionRight{
+  margin-top: 4em;
+  width: 55%;
+}
+
+@media (max-width: 1050px){ 
+  .App {
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .SectionLeft{
+    width: 30em;
+  }
+  .SectionRight{
+    width: 100%;
+  }
+}
+@media (max-width: 600px){ 
+  .SectionLeft{
+    width: 20em;
+  }
+  .SectionRight{
+    width: 100%;
+  }
+}
+@media (max-width: 450px){ 
+  .SectionLeft{
+    width: 15em;
+  }
+}

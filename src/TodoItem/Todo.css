@@ -1,0 +1,95 @@
+.Todo{
+    margin: auto;
+    margin-top: .5em;
+    padding: .5em .5em .5em 1em;
+    width: 80%;
+    background: #B4D8C0;
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: row nowrap;
+
+    border: none;
+    border-radius: 1em;
+}
+.CheckIcon{
+    margin: auto;
+    width: 3em;
+    height: 3em;
+    background: #D3E5D8;
+    opacity: 0.7;
+    border: solid .3em red;
+    border-radius: 50%;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    overflow: visible;
+    transition: all .4s ease;
+}
+.CheckIcon:active{
+    background: none;
+    border: none;
+}
+.TicSvg{
+    width: 80%;
+    overflow: visible;
+}
+.TicIcon{
+    fill:#383838;
+    opacity:0.3;
+    transition: all .3s ease;
+}
+.CheckIcon:hover .TicIcon{
+    fill:#00AA50;
+    opacity: 1;
+}
+.CheckIcon:active .TicIcon{
+    fill:#00AA50;
+    opacity: .75;
+    transform: scale(1.2);
+}
+.TodoContent{
+    width: 84%;
+}
+.TodoName{
+    font-size: 1.6em;
+    line-height: .1;
+}
+.TodoDescription{
+    font-size: 1.1em;
+    line-height: 1;
+
+}
+.ClearCross{
+    width: 4%;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.ClearCross:hover{
+    transform: scale(1.05);
+    color: red;
+}
+
+/* ---------------------------------------- */
+/* --------------- FINISHED --------------- */
+.TodoNameFinished{
+    text-decoration: line-through;
+    opacity: .7;
+}
+.TodoDescriptionFinished{
+    text-decoration: line-through;
+    opacity: .7;
+
+}
+.CheckIcon .TicIconFinished{
+    fill:#00AA50;
+    opacity: .75;
+    transform: scale(1.2);
+}
+.CheckIconFinished{
+    background: none;
+    border: none;
+}
