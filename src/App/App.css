@@ -1,5 +1,5 @@
 .App {
-  background: #f3bdbd;
+  background-image: url("../assets/todoBackground.jpg");;
   width: 100%;
   min-height: 100vh;
   display: flex;
